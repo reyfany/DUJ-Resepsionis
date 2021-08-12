@@ -237,92 +237,94 @@
             </header>
             <!-- Page Sidebar Ends-->
             <div class="page-body">
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="row">
-                            <div class="col-9">
-                                <h3>Ubah Data Pegawai</h3>
-                            </div>
-                            <div class="col-3">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="index-admin.html"><i data-feather="home"></i></a>
-                                    </li>
-                                    <li class="breadcrumb-item">Pegawai</li>
-                                    <li class="breadcrumb-item">Ubah Pegawai</li>
-                                </ol>
+                <!-- Container-fluid starts-->
+                <div class="card">
+                    <!-- atas -->
+                    <div class="container-fluid">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Ubah Data Pegawai</h3>
+                                </div>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Pegawai</li>
+                                            <li class="breadcrumb-item">Ubah Data Pegawai</li>
+                                        </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!-- end atas -->
 
-                <!-- Container-fluid starts-->
-                <div class="card">
                     <div class="card-body">
                         <!-- contet -->
-                        <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
-                                    </div>
-                                </div>
+                        <form action="" method="GET">
+                            <div class="row ">
                                 <div class="col-lg-3 ">
-                                    <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo "> </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 9px; ">Pilih Foto</label>
+                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" data-validation-required-message="v." />
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 ">
+                                    <input type="file " class="custom-file-input  " />
+                                    <label class="custom-file-label " for="customFile " " style="left: 9px; " >Pilih Foto</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row ">
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Nama Lengkap</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Nama Anda * " id="name " required=" " />
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Role</b> </label>
-                                            <select name="role" id="select" class="form-control">
-                                                <option value="1">Rumah</option>
-                                                <option value="2">Kantor</option>
-                                                <option value="3">Sekolah</option>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label for="select " class=" form-control-label "><b>Role</b> </label>
+                                        <select name="role " id="select " class="form-control ">
+                                                <option value="1 ">Rumah</option>
+                                                <option value="2 ">Kantor</option>
+                                                <option value="3 ">Sekolah</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Email</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Email Anda *" id="email" required="" data-validation-required-message="" Masukkan Email Anda. " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Password</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Password Anda* " id="password " required=" " data-validation-required-message="Masukkan Password Anda. " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nomor Telepon</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " data-validation-required-message="Your Nomor Telepon Anda. "/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Alamat</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " data-validation-required-message="Your Alamat Anda . " style="height: 40px; "></textarea>
-                                        </div>
                                     </div>
                                 </div>
-                                                          
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block " style="margin-top: 10px; ">Ubah Data</button>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Email</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Email Anda * " id="email " required=" " />
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Password</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Password Anda* " id="password " required=" " />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Nomor Telepon</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Alamat</b></label>
+                                        <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-3 ">
+                                    <button class="btn btn-primary btn-block ">Ubah Data</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- end content -->
