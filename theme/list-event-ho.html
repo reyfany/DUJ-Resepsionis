@@ -200,7 +200,6 @@
                                     <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
                                     <ul class="nav-submenu menu-content">
                                         <li><a href="data-tamu-ho.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-ho.html">Detail Kehadiran Tamu</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -211,13 +210,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="tv"></i><span>Verifikasi</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="verifikasi-ho.html">Verifikasi Fingerprint dan Face Detection</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
                                     <ul class="nav-submenu menu-content">
                                         <li><a href="detail-profile-ho.html">Detail Profile</a></li>
                                     </ul>
@@ -257,7 +250,7 @@
                         <div class="card-header">
                             <div class="header-top">
                                 <div class="faq-form pull-left">
-                                    <input class="form-control" placeholder="Cari Pegawai" type="search" aria-controls="advance-1">
+                                    <input class="form-control" placeholder="Cari Event" type="search" aria-controls="advance-1">
                                     <i class="search-icon" data-feather="search"></i>
                                 </div>
                                 <div class="faq-form " style="top: 7px; ">
@@ -274,71 +267,80 @@
                             </div>
                         </div>
                         <!-- contet -->
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="table-responsive text-center" ">
-                                    <table class="table table-striped table-bordered mb-12 ">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col ">No</th>
-                                                <th scope="col ">Judul Materi Event</th>
-                                                <th scope="col ">Deskripsi Event</th>
-                                                <th scope="col ">Tanggal Event</th>
-                                                <th scope="col ">Jam Event</th>
-                                                <th scope="col ">Asal Center</th>
-                                                <th scope="col ">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row ">1</th>
-                                                <td>Aliquam erat volutpat.</td>
-                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
-                                                <td>Minggu | 08 - 12 - 2021 </td>
-                                                <td>07.00</td>
-                                                <td>Jember</td>
-                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row ">2</th>
-                                                <td>Aliquam erat volutpat.</td>
-                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
-                                                <td>Minggu | 08 - 12 - 2021 </td>
-                                                <td>07.00</td>
-                                                <td>Jember</td>
-                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row ">2</th>
-                                                <td>Aliquam erat volutpat.</td>
-                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
-                                                <td>Minggu | 08 - 12 - 2021 </td>
-                                                <td>07.00</td>
-                                                <td>Konohagaure</td>
-                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row ">4</th>
-                                                <td>Aliquam erat volutpat.</td>
-                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
-                                                <td>Minggu | 08 - 12 - 2021 </td>
-                                                <td>07.00</td>
-                                                <td>Land Of Dawn</td>
-                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row ">5</th>
-                                                <td>Aliquam erat volutpat.</td>
-                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
-                                                <td>Minggu | 08 - 12 - 2021 </td>
-                                                <td>07.00</td>
-                                                <td>Banyuwangi</td>
-                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col ">No</th>
+                                        <th scope="col ">Judul Event</th>
+                                        <th scope="col ">Deskripsi Event</th>
+                                        <th scope="col ">Tanggal Event</th>
+                                        <th scope="col ">Jam Event</th>
+                                        <th scope="col ">Cneter</th>
+                                        <th scope="col ">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row ">1</th>
+                                        <td>Aliquam erat volutpat.</td>
+                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Bondowoso</td>
+                                        <td>
+                                            <a href=" " data-feather="book-open">Detail</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">2</th>
+                                        <td>Aliquam erat volutpat.</td>
+                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Bondowoso</td>
+                                        <td>
+                                            <a href=" " data-feather="book-open">Detail</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">3</th>
+                                        <td>Aliquam erat volutpat.</td>
+                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Bondowoso</td>
+                                        <td>
+                                            <a href=" " data-feather="book-open">Detail</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">4</th>
+                                        <td>Aliquam erat volutpat.</td>
+                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Bondowoso</td>
+                                        <td>
+                                            <a href=" " data-feather="book-open">Detail</a>
+                                        </td>
+                                        <tr>
+                                            <th scope="row ">5</th>
+                                            <td>Aliquam erat volutpat.</td>
+                                            <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                            <td>Minggu | 08 - 12 - 2021 </td>
+                                            <td>07.00</td>
+                                            <td>Bondowoso</td>
+                                            <td>
+                                                <a href=" " data-feather="book-open">Detail</a>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
                         </div>
+
                     </div>
                 </div>
                 <!-- Container-fluid Ends-->
