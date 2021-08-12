@@ -213,7 +213,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="tv"></i><span> Verifikasi</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="tv"></i><span>Verifikasi</span></a>
                                     <ul class="nav-submenu menu-content">
                                         <li><a href="verifikasi-cabang.html">Verifikasi Fingerprint dan Face Detection</a></li>
                                     </ul>
@@ -222,7 +222,6 @@
                                     <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
                                     <ul class="nav-submenu menu-content">
                                         <li><a href="detail-profile-cabang.html">Detail Profile</a></li>
-                                        <li><a href="ubah-profile-cabang.html">Ubah Profile</a></li>
                                     </ul>
                                 </li>
                         </div>
@@ -252,7 +251,8 @@
                 <div class="card">
                     <div class="card-body">
                         <!-- contet -->
-                        <div class="col-lg-12">
+                        <!-- contet -->
+                        <div class="col-md-12">
                             <form action="" method="GET">
                                 <div class="row">
                                     <div class="col-md-5">
@@ -282,18 +282,35 @@
                                     <div class="col-md-5 ">
                                         <div class="form-group ">
                                             <label class="form-label "><b>Upload Materi</b></label>
+
                                             <input type="file" class="form-control" style="height: 45px;">
                                         </div>
                                     </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Deskripsi Event</b></label>
-                                            <textarea class="form-control " style="height: 40px;"></textarea>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-label"><b>Jumlah Kehadiran Tamu</b></label>
+                                            <input type="number" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="select" class=" form-control-label"><b>Jumlah PO</b> </label>
+                                            <input type="number" class="form-control" placeholder="-" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-label"><b>Jumlah DO Event</b></label>
+                                            <input type="number" class="form-control" placeholder="-" />
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
-                                    <div class="col-lg-2 ">
+                                    <div class="col-lg-3 ">
                                         <button class="btn btn-primary btn-block ">Ubah Data</button>
                                     </div>
                                 </div>
