@@ -237,63 +237,67 @@
             </header>
             <!-- Page Sidebar Ends-->
             <div class="page-body">
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="row">
-                            <div class="col-9">
-                                <h3>Ubah Profile</h3>
-                            </div>
-                            <div class="col-3">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="index-admin.html"><i data-feather="home"></i></a>
-                                    </li>
-                                    <li class="breadcrumb-item">Akun</li>
-                                    <li class="breadcrumb-item">Ubah Profile</li>
-                                </ol>
+                <div class="card">
+                    <!-- atas -->
+                    <div class="container-fluid">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Detail Profile</h3>
+                                </div>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Akun</li>
+                                            <li class="breadcrumb-item">Detail Profile</li>
+                                        </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Container-fluid starts-->
-                <div class="card">
-                    <div class="card-body">
-                        <!-- contet -->
-                        <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 ">
-                                    <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo "> </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 9px; ">Pilih Foto</label>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" data-validation-required-message="v." />
+                    <!-- Container-fluid starts-->
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- contet -->
+                            <div class="col-lg-12">
+                                <form action="" method="GET">
+                                    <div class="row ">
+                                        <div class="col-lg-3 ">
+                                            <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Role</b> </label>
-                                            <select name="role" id="select" class="form-control">
+                                    <div class="col-lg-3 ">
+                                        <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
+                                            <small class="text-danger " v-if="errors.photo "> </small>
+                                            <label class="custom-file-label " for="customFile " " style="left: 9px; ">Pilih Foto</label>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="form-label"><b>Nama Lengkap</b></label>
+                                                <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" data-validation-required-message="v." />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="select" class=" form-control-label"><b>Role</b> </label>
+                                                <select name="role" id="select" class="form-control">
                                                 <option value="1">Rumah</option>
                                                 <option value="2">Kantor</option>
                                                 <option value="3">Sekolah</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Email</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Email Anda *" id="email" required="" data-validation-required-message="" Masukkan Email Anda. " />
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="form-label"><b>Email</b></label>
+                                                <input type="text" class="form-control" placeholder="Masukkan Email Anda *" id="email" required="" data-validation-required-message="" Masukkan Email Anda. " />
                                         </div>
                                     </div>
                                     <div class="col-md-5 ">
@@ -324,9 +328,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- end content -->
             </div>
-
+                <!-- end content -->
+        
             </div>
             <!-- Container-fluid Ends-->
         </div>
