@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-pendamping.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-admin.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-pendamping.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-admin.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -193,23 +193,36 @@
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-pendamping.html">Default</a></li>
+                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
+                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
+                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
+                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-pendamping.html">Data Tamu</a></li>
-                                        <li><a href="tambah-data-pendamping.html">Tambah Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-pendamping.html">Detail Kehadiran Tamu</a></li>
-                                        <li><a href="ubah-tamu-pendamping.html">Ubah Data Tamu</a></li>
+                                        <li><a href="data-tamu.html">Data Tamu</a></li>
+                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-pendamping.html">Detail Profile</a></li>
-
+                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
+                                        <li><a href="list-event-admin.html">Data Event List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="detail-profile.html">Detail Profile</a></li>
                                     </ul>
                                 </li>
                         </div>
@@ -219,195 +232,174 @@
             <div class="page-body">
                 <!-- Container-fluid starts-->
                 <div class="card">
+                    <!-- atas -->
                     <div class="container-fluid">
                         <div class="page-header">
                             <div class="row">
-                                <div class="col-9">
-                                    <h3 style="color: #7366FF;">Tambah Data Tamu</h3>
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Data Event</h3>
                                 </div>
-                                <div class="col-3">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="index-pendamping.html"><i data-feather="home"></i></a>
-                                        </li>
-                                        <li class="breadcrumb-item">Tamu</li>
-                                        <li class="breadcrumb-item">Tambah Data Tamu</li>
-                                    </ol>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Event</li>
+                                            <li class="breadcrumb-item">Data Event</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
+                    <!-- end atas -->
+                    <!-- contet -->
+                    <!-- Container-fluid starts-->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="header-top">
+                                <div class="faq-form pull-left">
+                                    <input class="form-control" placeholder="Cari Pegawai" type="search" aria-controls="advance-1">
+                                    <i class="search-icon" data-feather="search"></i>
+                                </div>
+                                <div class="faq-form " style="top: 7px; ">
+                                    <label>Show 
+                                                        <select>
+                                                        <option value="10 ">10</option>
+                                                        <option value="25 ">25</option>
+                                                        <option value="50 ">50</option>
+                                                        <option value="100 ">100</option>
+                                                        </select> 
+                                                        entries
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                         <!-- contet -->
                         <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
-                                    </div>
+                            <div class="card">
+                                <div class="table-responsive text-center" ">
+                                    <table class="table table-striped table-bordered mb-12 ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col ">No</th>
+                                                <th scope="col ">Judul Materi Event</th>
+                                                <th scope="col ">Deskripsi Event</th>
+                                                <th scope="col ">Tanggal Event</th>
+                                                <th scope="col ">Jam Event</th>
+                                                <th scope="col ">Asal Center</th>
+                                                <th scope="col ">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row ">1</th>
+                                                <td>Aliquam erat volutpat.</td>
+                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                                <td>Minggu | 08 - 12 - 2021 </td>
+                                                <td>07.00</td>
+                                                <td>Jember</td>
+                                                <td style="display: flex; ">
+                                                    <a href="# " data-feather="edit ">Edit</a>
+                                                    <a href="# " data-feather="book-open ">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">2</th>
+                                                <td>Aliquam erat volutpat.</td>
+                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                                <td>Minggu | 08 - 12 - 2021 </td>
+                                                <td>07.00</td>
+                                                <td>Jember</td>
+                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">2</th>
+                                                <td>Aliquam erat volutpat.</td>
+                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                                <td>Minggu | 08 - 12 - 2021 </td>
+                                                <td>07.00</td>
+                                                <td>Konohagaure</td>
+                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">4</th>
+                                                <td>Aliquam erat volutpat.</td>
+                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                                <td>Minggu | 08 - 12 - 2021 </td>
+                                                <td>07.00</td>
+                                                <td>Land Of Dawn</td>
+                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">5</th>
+                                                <td>Aliquam erat volutpat.</td>
+                                                <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
+                                                <td>Minggu | 08 - 12 - 2021 </td>
+                                                <td>07.00</td>
+                                                <td>Banyuwangi</td>
+                                                <td><a href=" " class="btn btn-success ">Detail</a></td>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo ">
-                                                                              </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 20px;">Pilih Foto</label>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>NIK</b></label>
-                                            <input type="number" class="form-control" placeholder="Masukkan NIK Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nomor Telepon</b></label>
-                                            <input type="number " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Alamat</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Center</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Kabupaten / Kota</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Kabupaten/Kota Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Pekerjaan</b></label>
-                                            <input type="text " class="form-control " placeholder="********* " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Staff</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Staff Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Penghasilan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Tanggungan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Riwayat Penyakit</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Usia</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Ketertarikan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Testimoni</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block " style="margin-top: 10px; ">Simpan Data</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- end content -->
+                <!-- Container-fluid Ends-->
             </div>
-
-            </div>
-            <!-- Container-fluid Ends-->
-        </div>
-        <!-- footer start-->
-        <footer class="footer ">
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-md-6 footer-copyright ">
-                        <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 ">
-                        <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+            <!-- footer start-->
+            <footer class="footer ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-md-6 footer-copyright ">
+                            <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+                        </div>
                     </div>
                 </div>
+            </footer>
             </div>
-        </footer>
-    </div>
-    </div>
-    <!-- latest jquery-->
-    <script src="../assets/js/jquery-3.5.1.min.js "></script>
-    <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap/popper.min.js "></script>
-    <script src="../assets/js/bootstrap/bootstrap.js "></script>
-    <!-- feather icon js-->
-    <script src="../assets/js/icons/feather-icon/feather.min.js "></script>
-    <script src="../assets/js/icons/feather-icon/feather-icon.js "></script>
-    <!-- Sidebar jquery-->
-    <script src="../assets/js/sidebar-menu.js "></script>
-    <script src="../assets/js/config.js "></script>
-    <!-- Plugins JS start-->
-    <script src="../assets/js/chart/chartist/chartist.js "></script>
-    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js "></script>
-    <script src="../assets/js/chart/knob/knob.min.js "></script>
-    <script src="../assets/js/chart/knob/knob-chart.js "></script>
-    <script src="../assets/js/chart/apex-chart/apex-chart.js "></script>
-    <script src="../assets/js/chart/apex-chart/stock-prices.js "></script>
-    <script src="../assets/js/notify/bootstrap-notify.min.js "></script>
-    <script src="../assets/js/dashboard/default.js "></script>
-    <script src="../assets/js/notify/index.js "></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.js "></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.en.js "></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js "></script>
-    <script src="../assets/js/typeahead/handlebars.js "></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js "></script>
-    <script src="../assets/js/typeahead/typeahead.custom.js "></script>
-    <script src="../assets/js/typeahead-search/handlebars.js "></script>
-    <script src="../assets/js/typeahead-search/typeahead-custom.js "></script>
-    <script src="../assets/js/tooltip-init.js "></script>
-    <!-- Plugins JS Ends-->
-    <!-- Theme js-->
-    <script src="../assets/js/script.js "></script>
-    <!-- <script src="../assets/js/theme-customizer/customizer.js "></script> -->
-    <!-- login js-->
-    <!-- Plugin used-->
+        </div>
+        <!-- latest jquery-->
+        <script src="../assets/js/jquery-3.5.1.min.js "></script>
+        <!-- Bootstrap js-->
+        <script src="../assets/js/bootstrap/popper.min.js "></script>
+        <script src="../assets/js/bootstrap/bootstrap.js "></script>
+        <!-- feather icon js-->
+        <script src="../assets/js/icons/feather-icon/feather.min.js "></script>
+        <script src="../assets/js/icons/feather-icon/feather-icon.js "></script>
+        <!-- Sidebar jquery-->
+        <script src="../assets/js/sidebar-menu.js "></script>
+        <script src="../assets/js/config.js "></script>
+        <!-- Plugins JS start-->
+        <script src="../assets/js/chart/chartist/chartist.js "></script>
+        <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js "></script>
+        <script src="../assets/js/chart/knob/knob.min.js "></script>
+        <script src="../assets/js/chart/knob/knob-chart.js "></script>
+        <script src="../assets/js/chart/apex-chart/apex-chart.js "></script>
+        <script src="../assets/js/chart/apex-chart/stock-prices.js "></script>
+        <script src="../assets/js/notify/bootstrap-notify.min.js "></script>
+        <script src="../assets/js/dashboard/default.js "></script>
+        <script src="../assets/js/notify/index.js "></script>
+        <script src="../assets/js/datepicker/date-picker/datepicker.js "></script>
+        <script src="../assets/js/datepicker/date-picker/datepicker.en.js "></script>
+        <script src="../assets/js/datepicker/date-picker/datepicker.custom.js "></script>
+        <script src="../assets/js/typeahead/handlebars.js "></script>
+        <script src="../assets/js/typeahead/typeahead.bundle.js "></script>
+        <script src="../assets/js/typeahead/typeahead.custom.js "></script>
+        <script src="../assets/js/typeahead-search/handlebars.js "></script>
+        <script src="../assets/js/typeahead-search/typeahead-custom.js "></script>
+        <script src="../assets/js/tooltip-init.js "></script>
+        <!-- Plugins JS Ends-->
+        <!-- Theme js-->
+        <script src="../assets/js/script.js "></script>
+        <!-- <script src="../assets/js/theme-customizer/customizer.js "></script> -->
+        <!-- login js-->
+        <!-- Plugin used-->
 </body>
 
 </html>

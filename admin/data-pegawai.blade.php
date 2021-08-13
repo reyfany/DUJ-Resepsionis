@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-pendamping.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-admin.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-pendamping.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-admin.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -193,23 +193,37 @@
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-pendamping.html">Default</a></li>
+                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
+                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
+                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
+                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-pendamping.html">Data Tamu</a></li>
-                                        <li><a href="tambah-data-pendamping.html">Tambah Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-pendamping.html">Detail Kehadiran Tamu</a></li>
-                                        <li><a href="ubah-tamu-pendamping.html">Ubah Data Tamu</a></li>
+                                        <li><a href="data-tamu.html">Data Tamu</a></li>
+                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-pendamping.html">Detail Profile</a></li>
+                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
+                                        <li><a href="list-event-admin.html">Data Event List</a></li>
+                                    </ul>
+                                </li>
 
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="detail-profile.html">Detail Profile</a></li>
                                     </ul>
                                 </li>
                         </div>
@@ -219,157 +233,205 @@
             <div class="page-body">
                 <!-- Container-fluid starts-->
                 <div class="card">
+                    <!-- atas -->
                     <div class="container-fluid">
                         <div class="page-header">
                             <div class="row">
-                                <div class="col-9">
-                                    <h3 style="color: #7366FF;">Tambah Data Tamu</h3>
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Data Pegawai</h3>
                                 </div>
-                                <div class="col-3">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="index-pendamping.html"><i data-feather="home"></i></a>
-                                        </li>
-                                        <li class="breadcrumb-item">Tamu</li>
-                                        <li class="breadcrumb-item">Tambah Data Tamu</li>
-                                    </ol>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Pegawai</li>
+                                            <li class="breadcrumb-item">Data Pegawai</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <!-- contet -->
-                        <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
-                                    </div>
+                    <!-- end atas -->
+                    <!-- contet -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="header-top">
+                                <div class="pull-left">
+                                    <button class="btn btn-primary btn-block " style=" height: 40px; width: 215px;">Tambah Data</button>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo ">
-                                                                              </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 20px;">Pilih Foto</label>
-                                    </div>
+                            </div>
+                            <br>
+                            <div class="header-top">
+                                <div class="faq-form">
+                                    <input class="form-control" placeholder="Cari Pegawai" type="search">
+                                    <i class="search-icon" data-feather="search"></i>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>NIK</b></label>
-                                            <input type="number" class="form-control" placeholder="Masukkan NIK Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nomor Telepon</b></label>
-                                            <input type="number " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Alamat</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Center</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Kabupaten / Kota</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Kabupaten/Kota Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Pekerjaan</b></label>
-                                            <input type="text " class="form-control " placeholder="********* " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Staff</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Staff Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Penghasilan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Tanggungan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Riwayat Penyakit</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Usia</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Ketertarikan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Testimoni</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-
+                                <div class="faq-form " style="top: 7px; ">
+                                    <label>Show 
+                                                        <select>
+                                                        <option value="10 ">10</option>
+                                                        <option value="25 ">25</option>
+                                                        <option value="50 ">50</option>
+                                                        <option value="100 ">100</option>
+                                                        </select> 
+                                                        entries
+                                    </label>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block " style="margin-top: 10px; ">Simpan Data</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
+                    <!-- search -->
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col ">No</th>
+                                    <th scope="col ">Nama Lengkap</th>
+                                    <th scope="col ">Email</th>
+                                    <th scope="col ">Nomor Telepon</th>
+                                    <th scope="col ">Alamat</th>
+                                    <th scope="col ">Role</th>
+                                    <th scope="col ">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row ">1</th>
+                                    <td>John keter</td>
+                                    <td>herryventer@gmail.com</td>
+                                    <td>13222222221111125</td>
+                                    <td>082334323332</td>
+                                    <td>Bondowoso</td>
+
+                                    <td style="display: flex; ">
+                                        <a href="#" data-feather="edit">Edit</a>
+                                        <a href="#" data-feather="book-open">Detail</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">2</th>
+                                    <td>John keter</td>
+                                    <td>herryventer@gmail.com</td>
+                                    <td>13222222221111125</td>
+                                    <td>082334323332</td>
+                                    <td>Bondowoso</td>
+
+                                    <td style="display: flex; ">
+                                        <a href="#" data-feather="edit">Edit</a>
+                                        <a href="#" data-feather="book-open">Detail</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">3</th>
+                                    <td>John keter</td>
+                                    <td>herryventer@gmail.com</td>
+                                    <td>13222222221111125</td>
+                                    <td>082334323332</td>
+                                    <td>Bondowoso</td>
+
+                                    <td style="display: flex; ">
+                                        <a href="#" data-feather="edit">Edit</a>
+                                        <a href="#" data-feather="book-open">Detail</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">4</th>
+                                    <td>John keter</td>
+                                    <td>herryventer@gmail.com</td>
+                                    <td>13222222221111125</td>
+                                    <td>082334323332</td>
+                                    <td>Bondowoso</td>
+
+                                    <td style="display: flex; ">
+                                        <a href="#" data-feather="edit">Edit</a>
+                                        <a href="#" data-feather="book-open">Detail</a>
+                                    </td>
+                                    <tr>
+                                        <th scope="row ">5</th>
+                                        <td>John keter</td>
+                                        <td>herryventer@gmail.com</td>
+                                        <td>13222222221111125</td>
+                                        <td>082334323332</td>
+                                        <td>Bondowoso</td>
+
+                                        <td style="display: flex; ">
+                                            <a href="#" data-feather="edit">Edit</a>
+                                            <a href="#" data-feather="book-open">Detail</a>
+                                        </td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end table -->
                 </div>
-                <!-- end content -->
+            </div>
             </div>
 
-            </div>
-            <!-- Container-fluid Ends-->
         </div>
-        <!-- footer start-->
-        <footer class="footer ">
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-md-6 footer-copyright ">
-                        <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 ">
-                        <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
-                    </div>
+        <!-- Container-fluid Ends-->
+    </div>
+    <!-- footer start-->
+    <footer class="footer ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-6 footer-copyright ">
+                    <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(
+                document.getElementById('map'), {
+                    center: new google.maps.LatLng(-33.91700, 151.233),
+                    zoom: 18
+                });
+
+            var iconBase =
+                '../assets/images/dashboard-2/';
+
+            var icons = {
+                userbig: {
+                    icon: iconBase + '1.png'
+                },
+                library: {
+                    icon: iconBase + '3.png'
+                },
+                info: {
+                    icon: iconBase + '2.png'
+                }
+            };
+
+            var features = [{
+                position: new google.maps.LatLng(-33.91752, 151.23270),
+                type: 'info'
+            }, {
+                position: new google.maps.LatLng(-33.91700, 151.23280),
+                type: 'userbig'
+            }, {
+                position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
+                type: 'library'
+            }];
+
+            // Create markers.
+            for (var i = 0; i < features.length; i++) {
+                var marker = new google.maps.Marker({
+                    position: features[i].position,
+                    icon: icons[features[i].type].icon,
+                    map: map
+                });
+            };
+        }
+    </script>
+    <script async=" " defer=" " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&amp;callback=initMap "></script>
     </div>
     </div>
     <!-- latest jquery-->

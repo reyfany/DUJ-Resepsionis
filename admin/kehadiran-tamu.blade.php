@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-pendamping.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-admin.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-pendamping.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-admin.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -193,22 +193,37 @@
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-pendamping.html">Default</a></li>
+                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
+                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
+                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
+                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-pendamping.html">Data Tamu</a></li>
-                                        <li><a href="tambah-data-pendamping.html">Tambah Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-pendamping.html">Detail Kehadiran Tamu</a></li>
-                                        <li><a href="ubah-tamu-pendamping.html">Ubah Data Tamu</a></li>
+                                        <li><a href="data-tamu.html">Data Tamu</a></li>
+                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-pendamping.html">Detail Profile</a></li>>
+                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
+                                        <li><a href="list-event-admin.html">Data Event List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="detail-profile.html">Detail Profile</a></li>
+                                    </ul>
                                 </li>
                         </div>
                 </nav>
@@ -226,7 +241,7 @@
                                     <div class='boorkmark pull-right'>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item">
-                                                <a href="index-pendamping.html"><i data-feather="home"></i></a>
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
                                             </li>
                                             <li class="breadcrumb-item">Tamu</li>
                                             <li class="breadcrumb-item">Detail Data Kehadiran Tamu</li>
@@ -465,6 +480,7 @@
             </div>
             <!-- Container-fluid Ends-->
             </div>
+
             <!-- footer start-->
             <footer class="footer">
                 <div class="container-fluid">

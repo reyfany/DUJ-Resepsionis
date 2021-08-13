@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-pendamping.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-admin.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-pendamping.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-admin.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -193,23 +193,36 @@
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-pendamping.html">Default</a></li>
+                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
+                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
+                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
+                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-pendamping.html">Data Tamu</a></li>
-                                        <li><a href="tambah-data-pendamping.html">Tambah Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-pendamping.html">Detail Kehadiran Tamu</a></li>
-                                        <li><a href="ubah-tamu-pendamping.html">Ubah Data Tamu</a></li>
+                                        <li><a href="data-tamu.html">Data Tamu</a></li>
+                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
+                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-pendamping.html">Detail Profile</a></li>
-
+                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
+                                        <li><a href="list-event-admin.html">Data Event List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li><a href="detail-profile.html">Detail Profile</a></li>
                                     </ul>
                                 </li>
                         </div>
@@ -219,136 +232,92 @@
             <div class="page-body">
                 <!-- Container-fluid starts-->
                 <div class="card">
+                    <!-- atas -->
                     <div class="container-fluid">
                         <div class="page-header">
                             <div class="row">
-                                <div class="col-9">
-                                    <h3 style="color: #7366FF;">Tambah Data Tamu</h3>
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Ubah Data Pegawai</h3>
                                 </div>
-                                <div class="col-3">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="index-pendamping.html"><i data-feather="home"></i></a>
-                                        </li>
-                                        <li class="breadcrumb-item">Tamu</li>
-                                        <li class="breadcrumb-item">Tambah Data Tamu</li>
-                                    </ol>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Pegawai</li>
+                                            <li class="breadcrumb-item">Ubah Data Pegawai</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end atas -->
+
                     <div class="card-body">
                         <!-- contet -->
-                        <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
+                        <form action="" method="GET">
+                            <div class="row ">
+                                <div class="col-lg-3 ">
+                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 ">
+                                    <input type="file " class="custom-file-input  " />
+                                    <label class="custom-file-label " for="customFile " " style="left: 9px; " >Pilih Foto</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row ">
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Nama Lengkap</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Nama Anda * " id="name " required=" " />
                                     </div>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo ">
-                                                                              </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 20px;">Pilih Foto</label>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label for="select " class=" form-control-label "><b>Role</b> </label>
+                                        <select name="role " id="select " class="form-control ">
+                                                <option value="1 ">Rumah</option>
+                                                <option value="2 ">Kantor</option>
+                                                <option value="3 ">Sekolah</option>
+                                            </select>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>NIK</b></label>
-                                            <input type="number" class="form-control" placeholder="Masukkan NIK Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nomor Telepon</b></label>
-                                            <input type="number " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Alamat</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Center</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Kabupaten / Kota</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Kabupaten/Kota Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Pekerjaan</b></label>
-                                            <input type="text " class="form-control " placeholder="********* " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Staff</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Staff Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Penghasilan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Tanggungan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Riwayat Penyakit</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Usia</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Ketertarikan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Testimoni</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block " style="margin-top: 10px; ">Simpan Data</button>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Email</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Email Anda * " id="email " required=" " />
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Password</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Password Anda* " id="password " required=" " />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Nomor Telepon</b></label>
+                                        <input type="text " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="form-group ">
+                                        <label class="form-label "><b>Alamat</b></label>
+                                        <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-3 ">
+                                    <button class="btn btn-primary btn-block ">Ubah Data</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- end content -->
