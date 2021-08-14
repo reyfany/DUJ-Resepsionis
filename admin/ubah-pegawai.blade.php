@@ -190,40 +190,8 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="ubah-pegawai.html"><i data-feather="briefcase"></i><span>Pegawai</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -260,7 +228,7 @@
                         <form action="" method="GET">
                             <div class="row ">
                                 <div class="col-lg-3 ">
-                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
+                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/user/1.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -281,9 +249,12 @@
                                     <div class="form-group ">
                                         <label for="select " class=" form-control-label "><b>Role</b> </label>
                                         <select name="role " id="select " class="form-control ">
-                                                <option value="1 ">Rumah</option>
-                                                <option value="2 ">Kantor</option>
-                                                <option value="3 ">Sekolah</option>
+                                            <option value="1 ">Admin</option>
+                                            <option value="2 ">Head Office</option>
+                                            <option value="3 ">Ketua Cabang</option>
+                                            <option value="4 ">Kasir</option>
+                                            <option value="5 ">Staf Pendamping</option>
+                                            <option value="6 ">Resepsionis</option>
                                             </select>
                                     </div>
                                 </div>
@@ -314,7 +285,9 @@
                             </div>
                             <div class="row ">
                                 <div class="col-lg-3 ">
-                                    <button class="btn btn-primary btn-block ">Ubah Data</button>
+                                    <a href="data-pegawai.html " class="btn btn-primary btn-block " style="margin-top: 10px; ">
+                                        Simpan Data</a>
+                             
                                 </div>
                             </div>
                         </form>

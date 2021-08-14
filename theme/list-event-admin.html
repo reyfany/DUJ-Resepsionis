@@ -190,40 +190,20 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-admin.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-pegawai.html"><i data-feather="briefcase"></i><span>Data Pegawai</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu.html"><i data-feather="users"></i><span>Data Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-event-admin.html"><i data-feather="users"></i><span>Data Event</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -283,7 +263,6 @@
                                     <tr>
                                         <th scope="col ">No</th>
                                         <th scope="col ">JudulEvent</th>
-                                        <th scope="col ">Deskripsi Event</th>
                                         <th scope="col ">Tanggal Event</th>
                                         <th scope="col ">Jam Event</th>
                                         <th scope="col ">Center</th>
@@ -294,57 +273,97 @@
                                     <tr>
                                         <th scope="row ">1</th>
                                         <td>Aliquam erat volutpat.</td>
-                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
                                         <td>Minggu | 08 - 12 - 2021</td>
                                         <td>07.00</td>
                                         <td>Jember</td>
                                         <td>
-                                            <a href=" " data-feather="book-open">Detail</a>
+                                            <a href=" " data-feather="book-open" data-toggle="modal" data-target="#modelId"></a>
                                         </td>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" style="color:#7366FF;">Detail Event</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                          <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <h6>Judul Event</h6>
+                                                            <p>Aliquam erat volutpat.</p>
+                                                            <h6>File Materi</h6>
+                                                            <p>Materi Pdf</p>
+                                                            <h6>Center</h6>
+                                                            <p>Banyuwangi</p>
+                                                            <h6>Jam dan Tanggal Event</h6>
+                                                            <p>08.00 - 12.00 | Minggu / 22 April 2021</p>
+                                                            <h6>Center</h6>
+                                                            <p>Banyuwangi</p>
+                                                            <h6>Evaluasi</h6>
+                                                            <p>Jumlah Hadir&emsp;:&emsp;10</p>
+                                                            <p>Jumlah PO&emsp;:&emsp;5</p>
+                                                            <p>Jumlah DO&emsp;:&emsp;3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            $('#exampleModal').on('show.bs.modal', event => {
+                                                var button = $(event.relatedTarget);
+                                                var modal = $(this);
+                                                // Use above variables to manipulate the DOM
+
+                                            });
+                                        </script>
+
                                     </tr>
                                     <tr>
                                         <th scope="row ">2</th>
                                         <td>Aliquam erat volutpat.</td>
-                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
                                         <td>Minggu | 08 - 12 - 2021</td>
                                         <td>07.00</td>
                                         <td>Jember</td>
                                         <td>
-                                            <a href=" " data-feather="book-open">Detail</a>
+                                            <a href=" " data-feather="book-open" data-toggle="modal" data-target="#modelId"></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row ">3</th>
                                         <td>Aliquam erat volutpat.</td>
-                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
                                         <td>Minggu | 08 - 12 - 2021</td>
                                         <td>07.00</td>
                                         <td>Jember</td>
                                         <td>
-                                            <a href=" " data-feather="book-open">Detail</a>
+                                            <a href=" " data-feather="book-open" data-toggle="modal" data-target="#modelId"></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row ">4</th>
                                         <td>Aliquam erat volutpat.</td>
-                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
                                         <td>Minggu | 08 - 12 - 2021</td>
                                         <td>07.00</td>
                                         <td>Jember</td>
                                         <td>
-                                            <a href=" " data-feather="book-open">Detail</a>
+                                            <a href=" " data-feather="book-open" data-toggle="modal" data-target="#modelId"></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row ">5</th>
                                         <td>Aliquam erat volutpat.</td>
-                                        <td>Integer non mattis massa, a euismod risus. Phasellus id urna aliquam, venenatis lacus viverra, porttitor ante.</td>
                                         <td>Minggu | 08 - 12 - 2021</td>
                                         <td>07.00</td>
                                         <td>Jember</td>
                                         <td>
-                                            <a href=" " data-feather="book-open">Detail</a>
+                                            <a href=" " data-feather="book-open" data-toggle="modal" data-target="#modelId"></a>
                                         </td>
+
                                 </tbody>
                             </table>
                         </div>

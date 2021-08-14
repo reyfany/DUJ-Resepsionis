@@ -190,40 +190,8 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="kehadiran-tamu.html"><i data-feather="users"></i><span>Tamu</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -260,7 +228,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="gambr" style="width: 120px;">
-                                                    <img style="width: 100%; border-radius: 100%;" src="../assets/images/appointment/app-ent.jpg" alt="">
+                                                    <img style="width: 100%; border-radius: 100%;" src="../assets/images/user/1.jpg" alt="">
                                                 </div>
                                                 <!-- nama -->
                                                 <div class="text col-md-112 pt-2">
@@ -272,10 +240,9 @@
                                             <!-- qr code -->
                                             <div class="col-md-3">
                                                 <div class="barcode" style="width: 120px;">
-                                                    <img style="width: 100%;" src="../assets/images/appointment/app-ent.jpg" alt="">
-                                                </div>
-                                                <div class="text-qr text-center">
-                                                    <p>QR Code</p>
+                                                    <img style="width: 100%;" src="../assets/qrcode.png" alt="">
+                                                    <p class="text-center">ID : 8882299</p>
+                                                    <p class="text-center">Ikbar Ramadhani</p>
                                                 </div>
                                             </div>
                                             <!-- qr code end -->
@@ -395,7 +362,8 @@
                                                 </div>
                                                 <br>
                                                 <div class="col-lg-6 " style="left: 10px;">
-                                                    <button class="btn btn-primary btn-block ">Ubah Data</button>
+                                                    <a href="index-admin.html" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                                                         Dashboard</a>
                                                 </div>
                                             </div>
                                             <!-- end conten detail -->

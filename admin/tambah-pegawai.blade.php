@@ -190,40 +190,8 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="tambah-pegawai.html"><i data-feather="briefcase"></i><span>Pegawai</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -260,86 +228,90 @@
                         <form action="" method="GET">
                             <div class="row ">
                                 <div class="col-lg-3 ">
-                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
+                                    <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/user/1.jpg" style=" width: 150px; height:150px; margin-bottom: 25px; "></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-3 ">
-                                    <input type="file " class="custom-file-input  " />
-                                    <label class="custom-file-label " for="customFile " " style="left: 9px; " >Pilih Foto</label>
-                                </div>
-                            </div>
-                            <br>
                             <div class="row ">
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label class="form-label "><b>Nama Lengkap</b></label>
-                                        <input type="text " class="form-control " placeholder="Masukkan Nama Anda * " id="name " required=" " />
+                                <div class="col-lg-3 ">
+                                    <input type="file " class="custom-file-input " />
+                                    <label class="custom-file-label " for="customFile " " style="left: 9px; ">Pilih Foto</label>
                                     </div>
                                 </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label for="select " class=" form-control-label "><b>Role</b> </label>
-                                        <select name="role " id="select " class="form-control ">
-                                                <option value="1 ">Rumah</option>
-                                                <option value="2 ">Kantor</option>
-                                                <option value="3 ">Sekolah</option>
+                                <br>
+                                <div class="row ">
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Nama Lengkap</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Nama Anda * " id="name " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label for="select " class=" form-control-label "><b>Role</b> </label>
+                                            <select name="role " id="select " class="form-control ">
+                                            <option value="1 ">Admin</option>
+                                            <option value="2 ">Head Office</option>
+                                            <option value="3 ">Ketua Cabang</option>
+                                            <option value="4 ">Kasir</option>
+                                            <option value="5 ">Staf Pendamping</option>
+                                            <option value="6 ">Resepsionis</option>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Email</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Email Anda * " id="email " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Password</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Password Anda* " id="password " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Nomor Telepon</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Alamat</b></label>
+                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label class="form-label "><b>Email</b></label>
-                                        <input type="text " class="form-control " placeholder="Masukkan Email Anda * " id="email " required=" " />
+                                <div class="row ">
+                                    <div class="col-lg-3 ">
+                                        <a href="data-pegawai.html " class="btn btn-primary btn-block " style="margin-top: 10px; ">
+                                        Simpan Data</a>
                                     </div>
                                 </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label class="form-label "><b>Password</b></label>
-                                        <input type="text " class="form-control " placeholder="Masukkan Password Anda* " id="password " required=" " />
-                                    </div>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label class="form-label "><b>Nomor Telepon</b></label>
-                                        <input type="text " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
-                                    </div>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group ">
-                                        <label class="form-label "><b>Alamat</b></label>
-                                        <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-3 ">
-                                    <button class="btn btn-primary btn-block ">Simpan Data</button>
-                                </div>
-                            </div>
                         </form>
+                        </div>
                     </div>
+                    <!-- end content -->
                 </div>
-                <!-- end content -->
-            </div>
 
             </div>
             <!-- Container-fluid Ends-->
-        </div>
-        <!-- footer start-->
-        <footer class="footer ">
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-md-6 footer-copyright ">
-                        <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 ">
-                        <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+            </div>
+            <!-- footer start-->
+            <footer class="footer ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-md-6 footer-copyright ">
+                            <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
     </div>
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.5.1.min.js "></script>

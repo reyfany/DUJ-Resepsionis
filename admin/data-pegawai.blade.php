@@ -190,43 +190,18 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-admin.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-pegawai.html"><i data-feather="briefcase"></i><span>Data Pegawai</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu.html"><i data-feather="users"></i><span>Data Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
-
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
-                                </li>
-                        </div>
                 </nav>
             </header>
             <!-- Page Sidebar Ends-->
@@ -260,7 +235,8 @@
                         <div class="card-header">
                             <div class="header-top">
                                 <div class="pull-left">
-                                    <button class="btn btn-primary btn-block " style=" height: 40px; width: 215px;">Tambah Data</button>
+                                    <a href="tambah-pegawai.html" class="btn btn-primary btn-block">
+                                        Tambah Data</a>
                                 </div>
                             </div>
                             <br>
@@ -303,12 +279,11 @@
                                     <td>John keter</td>
                                     <td>herryventer@gmail.com</td>
                                     <td>13222222221111125</td>
-                                    <td>082334323332</td>
-                                    <td>Bondowoso</td>
-
-                                    <td style="display: flex; ">
-                                        <a href="#" data-feather="edit">Edit</a>
-                                        <a href="#" data-feather="book-open">Detail</a>
+                                    <td>Jalan Ahmad Yani, Kecamatan Kemang Jakarta Selatan Nomor 25 RT 22</td>
+                                    <td>Staff</td>
+                                    <td>
+                                        <a href="ubah-pegawai.html"> <i data-feather="edit"></i> </a>
+                                        <a href="detail-pegawai.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -316,12 +291,11 @@
                                     <td>John keter</td>
                                     <td>herryventer@gmail.com</td>
                                     <td>13222222221111125</td>
-                                    <td>082334323332</td>
-                                    <td>Bondowoso</td>
-
-                                    <td style="display: flex; ">
-                                        <a href="#" data-feather="edit">Edit</a>
-                                        <a href="#" data-feather="book-open">Detail</a>
+                                    <td>Jalan Ahmad Yani, Kecamatan Kemang Jakarta Selatan Nomor 25 RT 22</td>
+                                    <td>Staff</td>
+                                    <td>
+                                        <a href="ubah-pegawai.html"> <i data-feather="edit"></i> </a>
+                                        <a href="detail-pegawai.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -329,12 +303,11 @@
                                     <td>John keter</td>
                                     <td>herryventer@gmail.com</td>
                                     <td>13222222221111125</td>
-                                    <td>082334323332</td>
-                                    <td>Bondowoso</td>
-
-                                    <td style="display: flex; ">
-                                        <a href="#" data-feather="edit">Edit</a>
-                                        <a href="#" data-feather="book-open">Detail</a>
+                                    <td>Jalan Ahmad Yani, Kecamatan Kemang Jakarta Selatan Nomor 25 RT 22</td>
+                                    <td>Staff</td>
+                                    <td>
+                                        <a href="ubah-pegawai.html"> <i data-feather="edit"></i> </a>
+                                        <a href="detail-pegawai.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -342,25 +315,25 @@
                                     <td>John keter</td>
                                     <td>herryventer@gmail.com</td>
                                     <td>13222222221111125</td>
-                                    <td>082334323332</td>
-                                    <td>Bondowoso</td>
-
-                                    <td style="display: flex; ">
-                                        <a href="#" data-feather="edit">Edit</a>
-                                        <a href="#" data-feather="book-open">Detail</a>
+                                    <td>Jalan Ahmad Yani, Kecamatan Kemang Jakarta Selatan Nomor 25 RT 22</td>
+                                    <td>Staff</td>
+                                    <td>
+                                        <a href="ubah-pegawai.html"> <i data-feather="edit"></i> </a>
+                                        <a href="detail-pegawai.html"> <i data-feather="book-open"></i> </a>
                                     </td>
-                                    <tr>
-                                        <th scope="row ">5</th>
-                                        <td>John keter</td>
-                                        <td>herryventer@gmail.com</td>
-                                        <td>13222222221111125</td>
-                                        <td>082334323332</td>
-                                        <td>Bondowoso</td>
-
-                                        <td style="display: flex; ">
-                                            <a href="#" data-feather="edit">Edit</a>
-                                            <a href="#" data-feather="book-open">Detail</a>
-                                        </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">5</th>
+                                    <td>John keter</td>
+                                    <td>herryventer@gmail.com</td>
+                                    <td>13222222221111125</td>
+                                    <td>Jalan Ahmad Yani, Kecamatan Kemang Jakarta Selatan Nomor 25 RT 22</td>
+                                    <td>Staff</td>
+                                    <td>
+                                        <a href="ubah-pegawai.html"> <i data-feather="edit"></i> </a>
+                                        <a href="detail-pegawai.html"> <i data-feather="book-open"></i> </a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -369,69 +342,69 @@
             </div>
             </div>
 
+            </div>
+            <!-- Container-fluid Ends-->
         </div>
-        <!-- Container-fluid Ends-->
-    </div>
-    <!-- footer start-->
-    <footer class="footer ">
-        <div class="container-fluid ">
-            <div class="row ">
-                <div class="col-md-6 footer-copyright ">
-                    <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                </div>
-                <div class="col-md-6 ">
-                    <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+        <!-- footer start-->
+        <footer class="footer ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-6 footer-copyright ">
+                        <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script>
-        var map;
+        </footer>
+        <script>
+            var map;
 
-        function initMap() {
-            map = new google.maps.Map(
-                document.getElementById('map'), {
-                    center: new google.maps.LatLng(-33.91700, 151.233),
-                    zoom: 18
-                });
+            function initMap() {
+                map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        center: new google.maps.LatLng(-33.91700, 151.233),
+                        zoom: 18
+                    });
 
-            var iconBase =
-                '../assets/images/dashboard-2/';
+                var iconBase =
+                    '../assets/images/dashboard-2/';
 
-            var icons = {
-                userbig: {
-                    icon: iconBase + '1.png'
-                },
-                library: {
-                    icon: iconBase + '3.png'
-                },
-                info: {
-                    icon: iconBase + '2.png'
-                }
-            };
+                var icons = {
+                    userbig: {
+                        icon: iconBase + '1.png'
+                    },
+                    library: {
+                        icon: iconBase + '3.png'
+                    },
+                    info: {
+                        icon: iconBase + '2.png'
+                    }
+                };
 
-            var features = [{
-                position: new google.maps.LatLng(-33.91752, 151.23270),
-                type: 'info'
-            }, {
-                position: new google.maps.LatLng(-33.91700, 151.23280),
-                type: 'userbig'
-            }, {
-                position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
-                type: 'library'
-            }];
+                var features = [{
+                    position: new google.maps.LatLng(-33.91752, 151.23270),
+                    type: 'info'
+                }, {
+                    position: new google.maps.LatLng(-33.91700, 151.23280),
+                    type: 'userbig'
+                }, {
+                    position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
+                    type: 'library'
+                }];
 
-            // Create markers.
-            for (var i = 0; i < features.length; i++) {
-                var marker = new google.maps.Marker({
-                    position: features[i].position,
-                    icon: icons[features[i].type].icon,
-                    map: map
-                });
-            };
-        }
-    </script>
-    <script async=" " defer=" " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&amp;callback=initMap "></script>
+                // Create markers.
+                for (var i = 0; i < features.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: features[i].position,
+                        icon: icons[features[i].type].icon,
+                        map: map
+                    });
+                };
+            }
+        </script>
+        <script async=" " defer=" " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&amp;callback=initMap "></script>
     </div>
     </div>
     <!-- latest jquery-->

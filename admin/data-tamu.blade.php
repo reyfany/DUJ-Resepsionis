@@ -190,40 +190,17 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-admin.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-pegawai.html"><i data-feather="briefcase"></i><span>Data Pegawai</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu.html"><i data-feather="users"></i><span>Data Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -304,8 +281,7 @@
                                     <td>Bondowoso</td>
                                     <td style="width: 5px;">2</td>
                                     <td>
-                                        <a href=" " data-feather="edit">Edit</a>
-                                        <a href=" " data-feather="book-open">Detail</a>
+                                        <a href="kehadiran-tamu.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -316,8 +292,7 @@
                                     <td>Bondowoso</td>
                                     <td style="width: 5px;">2</td>
                                     <td>
-                                        <a href=" " data-feather="edit">Edit</a>
-                                        <a href=" " data-feather="book-open">Detail</a>
+                                        <a href="kehadiran-tamu.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -328,8 +303,7 @@
                                     <td>Bondowoso</td>
                                     <td style="width: 5px;">2</td>
                                     <td>
-                                        <a href=" " data-feather="edit">Edit</a>
-                                        <a href=" " data-feather="book-open">Detail</a>
+                                        <a href="kehadiran-tamu.html"> <i data-feather="book-open"></i> </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -340,86 +314,85 @@
                                     <td>Bondowoso</td>
                                     <td style="width: 5px; ">2</td>
                                     <td>
-                                        <a href=" " data-feather="edit">Edit</a>
-                                        <a href=" " data-feather="book-open">Detail</a>
+                                        <a href="kehadiran-tamu.html"> <i data-feather="book-open"></i> </a>
                                     </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">5</th>
+                                    <td>John keter</td>
+                                    <td>13222222221111125</td>
+                                    <td>082334323332</td>
+                                    <td>Bondowoso</td>
+                                    <td style="width: 5px; ">2</td>
+                                    <td>
+                                        <a href="kehadiran-tamu.html"> <i data-feather="book-open"></i> </a>
                                     </td>
-                                    <tr>
-                                        <th scope="row ">5</th>
-                                        <td>John keter</td>
-                                        <td>13222222221111125</td>
-                                        <td>082334323332</td>
-                                        <td>Bondowoso</td>
-                                        <td style="width: 5px; ">2</td>
-                                        <td>
-                                            <a href=" " data-feather="edit">Edit</a>
-                                            <a href=" " data-feather="book-open">Detail</a>
-                                        </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!-- end table --
-                
+                    <!-- end table -->
+
                 </div>
             </div>
             </div>
 
         </div>
         <!-- Container-fluid Ends-->
+    </div>
+    <!-- footer start-->
+    <footer class="footer ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-6 footer-copyright ">
+                    <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
                 </div>
-                <!-- footer start-->
-                <footer class="footer ">
-                    <div class="container-fluid ">
-                        <div class="row ">
-                            <div class="col-md-6 footer-copyright ">
-                                <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                            </div>
-                            <div class="col-md-6 ">
-                                <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <div class="col-md-6 ">
+                    <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                <script async=" " defer=" " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&amp;callback=initMap "></script>
-            </div>
-            </div>
-            <!-- latest jquery-->
-            <script src="../assets/js/jquery-3.5.1.min.js "></script>
-            <!-- Bootstrap js-->
-            <script src="../assets/js/bootstrap/popper.min.js "></script>
-            <script src="../assets/js/bootstrap/bootstrap.js "></script>
-            <!-- feather icon js-->
-            <script src="../assets/js/icons/feather-icon/feather.min.js "></script>
-            <script src="../assets/js/icons/feather-icon/feather-icon.js "></script>
-            <!-- Sidebar jquery-->
-            <script src="../assets/js/sidebar-menu.js "></script>
-            <script src="../assets/js/config.js "></script>
-            <!-- Plugins JS start-->
-            <script src="../assets/js/chart/chartist/chartist.js "></script>
-            <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js "></script>
-            <script src="../assets/js/chart/knob/knob.min.js "></script>
-            <script src="../assets/js/chart/knob/knob-chart.js "></script>
-            <script src="../assets/js/chart/apex-chart/apex-chart.js "></script>
-            <script src="../assets/js/chart/apex-chart/stock-prices.js "></script>
-            <script src="../assets/js/notify/bootstrap-notify.min.js "></script>
-            <script src="../assets/js/dashboard/default.js "></script>
-            <script src="../assets/js/notify/index.js "></script>
-            <script src="../assets/js/datepicker/date-picker/datepicker.js "></script>
-            <script src="../assets/js/datepicker/date-picker/datepicker.en.js "></script>
-            <script src="../assets/js/datepicker/date-picker/datepicker.custom.js "></script>
-            <script src="../assets/js/typeahead/handlebars.js "></script>
-            <script src="../assets/js/typeahead/typeahead.bundle.js "></script>
-            <script src="../assets/js/typeahead/typeahead.custom.js "></script>
-            <script src="../assets/js/typeahead-search/handlebars.js "></script>
-            <script src="../assets/js/typeahead-search/typeahead-custom.js "></script>
-            <script src="../assets/js/tooltip-init.js "></script>
-            <!-- Plugins JS Ends-->
-            <!-- Theme js-->
-            <script src="../assets/js/script.js "></script>
-            <!-- <script src="../assets/js/theme-customizer/customizer.js "></script> -->
-            <!-- login js-->
-            <!-- Plugin used-->
+    <script async=" " defer=" " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&amp;callback=initMap "></script>
+    </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.5.1.min.js "></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/popper.min.js "></script>
+    <script src="../assets/js/bootstrap/bootstrap.js "></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js "></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js "></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/sidebar-menu.js "></script>
+    <script src="../assets/js/config.js "></script>
+    <!-- Plugins JS start-->
+    <script src="../assets/js/chart/chartist/chartist.js "></script>
+    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js "></script>
+    <script src="../assets/js/chart/knob/knob.min.js "></script>
+    <script src="../assets/js/chart/knob/knob-chart.js "></script>
+    <script src="../assets/js/chart/apex-chart/apex-chart.js "></script>
+    <script src="../assets/js/chart/apex-chart/stock-prices.js "></script>
+    <script src="../assets/js/notify/bootstrap-notify.min.js "></script>
+    <script src="../assets/js/dashboard/default.js "></script>
+    <script src="../assets/js/notify/index.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.en.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js "></script>
+    <script src="../assets/js/typeahead/handlebars.js "></script>
+    <script src="../assets/js/typeahead/typeahead.bundle.js "></script>
+    <script src="../assets/js/typeahead/typeahead.custom.js "></script>
+    <script src="../assets/js/typeahead-search/handlebars.js "></script>
+    <script src="../assets/js/typeahead-search/typeahead-custom.js "></script>
+    <script src="../assets/js/tooltip-init.js "></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="../assets/js/script.js "></script>
+    <!-- <script src="../assets/js/theme-customizer/customizer.js "></script> -->
+    <!-- login js-->
+    <!-- Plugin used-->
 </body>
 
 </html>

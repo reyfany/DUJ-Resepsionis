@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-ketua-cabang.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-admin.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-ketua-cabang.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-admin.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -190,127 +190,112 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-ketua-cabang.html">Default</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-cabang.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-cabang.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-cabang.html">Data Event</a></li>
-                                        <li><a href="tambah-event-cabang.html">Tambah Event</a></li>
-                                        <li><a href="ubah-event-cabang.html">Ubah Event</a></li>
-                                        <li><a href="detail-event-cabang.html">Detail Event</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-cabang.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-pegawai.html"><i data-feather="briefcase"></i><span>Pegawai</span></a>
                                 </li>
                         </div>
                 </nav>
             </header>
             <!-- Page Sidebar Ends-->
             <div class="page-body">
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="row">
-                            <div class="col-9">
-                                <h3>Tambah Event</h3>
-                            </div>
-                            <div class="col-3">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="index-ketua-cabang.html"><i data-feather="home"></i></a>
-                                    </li>
-                                    <li class="breadcrumb-item">Event</li>
-                                    <li class="breadcrumb-item">Tambah Event</li>
-                                </ol>
+                <div class="card">
+                    <!-- atas -->
+                    <div class="container-fluid">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Detail Data Pegawai</h3>
+                                </div>
+                                <div class="col-6">
+                                    <div class='boorkmark pull-right'>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index-admin.html"><i data-feather="home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">Pegawai</li>
+                                            <li class="breadcrumb-item">Detail Data Pegawai</li>
+                                        </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Container-fluid starts-->
-                <div class="card">
-                    <div class="card-body">
-                        <!-- contet -->
-                        <div class="col-md-12">
+                    <!-- Container-fluid starts-->
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- contet -->
                             <form action="" method="GET">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Judul Materi</b></label>
-                                            <input type="text" class="form-control" />
+                                <div class="col-lg-2">
+                                    <div class="col-auto"><img class="rounded-circle" alt="" src="../assets/images/user/1.jpg" style="width: 150px;  height:150px; margin-bottom: 25px;"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Nama</p>
+                                        </div>
+                                        <div class="isi-data col-md-5">
+                                            <span>:</span<p>&emsp;&emsp;Ikbar Ramadhani</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Center</b> </label>
-                                            <input type="text" class="form-control" />
+                                    <br>
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Role</p>
+                                        </div>
+                                        <div class="isi-data col-md-5">
+                                            <p><span>:</span>&emsp;&emsp;Staff</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Tanggal Event</b></label>
-                                            <input type="text" class="form-control" />
+                                    <br>
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Nomor Telepon</p>
+                                        </div>
+                                        <div class="isi-data col-md-5">
+                                            <p><span>:</span>&emsp;&emsp;089324432166</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Jam Event</b></label>
-                                            <input type="text " class="form-control " />
+                                    <br>
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Alamat</p>
+                                        </div>
+                                        <div class="isi-data col-md-8">
+                                            <p><span>:</span>&emsp;&emsp;Jalan Badean, Bondowoso</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Upload Materi</b></label>
-
-                                            <input type="file" class="form-control" style="height: 45px;">
+                                    <br>
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Email</p>
+                                        </div>
+                                        <div class="isi-data col-md-8">
+                                            <p><span>:</span>&emsp;&emsp;ikbarramadhani@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="data-profile" style="display: flex;">
+                                        <div class="data col-md-4">
+                                            <p>Password</p>
+                                        </div>
+                                        <div class="isi-data col-md-8">
+                                            <p><span>:</span>&emsp;&emsp;***************</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Jumlah Kehadiran Tamu</b></label>
-                                            <input type="number" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Jumlah PO</b> </label>
-                                            <input type="number" class="form-control" placeholder="-" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Jumlah DO Event</b></label>
-                                            <input type="number" class="form-control" placeholder="-" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block ">Tambah Data</button>
-                                    </div>
+                                <br>
+                                <div class="col-lg-3 ">
+                                    <a href="ubah-pegawai.html" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                                        Ubah Data</a>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    <!-- end content -->
                 </div>
-                <!-- Container-fluid Ends-->
+            </div>
+
+            <!-- Container-fluid Ends-->
             </div>
             <!-- footer start-->
             <footer class="footer">
@@ -325,44 +310,44 @@
                     </div>
                 </div>
             </footer>
-            </div>
         </div>
-        <!-- latest jquery-->
-        <script src="../assets/js/jquery-3.5.1.min.js"></script>
-        <!-- Bootstrap js-->
-        <script src="../assets/js/bootstrap/popper.min.js"></script>
-        <script src="../assets/js/bootstrap/bootstrap.js"></script>
-        <!-- feather icon js-->
-        <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-        <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
-        <!-- Sidebar jquery-->
-        <script src="../assets/js/sidebar-menu.js"></script>
-        <script src="../assets/js/config.js"></script>
-        <!-- Plugins JS start-->
-        <script src="../assets/js/chart/chartist/chartist.js"></script>
-        <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
-        <script src="../assets/js/chart/knob/knob.min.js"></script>
-        <script src="../assets/js/chart/knob/knob-chart.js"></script>
-        <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-        <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
-        <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
-        <script src="../assets/js/dashboard/default.js"></script>
-        <script src="../assets/js/notify/index.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-        <script src="../assets/js/typeahead/handlebars.js"></script>
-        <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-        <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-        <script src="../assets/js/typeahead-search/handlebars.js"></script>
-        <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
-        <script src="../assets/js/tooltip-init.js"></script>
-        <!-- Plugins JS Ends-->
-        <!-- Theme js-->
-        <script src="../assets/js/script.js"></script>
-        <!-- <script src="../assets/js/theme-customizer/customizer.js"></script> -->
-        <!-- login js-->
-        <!-- Plugin used-->
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.js"></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <script src="../assets/js/chart/chartist/chartist.js"></script>
+    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
+    <script src="../assets/js/chart/knob/knob.min.js"></script>
+    <script src="../assets/js/chart/knob/knob-chart.js"></script>
+    <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
+    <script src="../assets/js/dashboard/default.js"></script>
+    <script src="../assets/js/notify/index.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../assets/js/typeahead/handlebars.js"></script>
+    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="../assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="../assets/js/typeahead-search/handlebars.js"></script>
+    <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../assets/js/tooltip-init.js"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="../assets/js/script.js"></script>
+    <!-- <script src="../assets/js/theme-customizer/customizer.js"></script> -->
+    <!-- login js-->
+    <!-- Plugin used-->
 </body>
 
 </html>

@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-ketua-cabang.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-resepsionis.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-ketua-cabang.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-resepsionis.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -190,181 +190,182 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-ketua-cabang.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-pendamping.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-cabang.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-cabang.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu-pendamping.html"><i data-feather="users"></i><span>Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-cabang.html">Data Event</a></li>
-                                        <li><a href="tambah-event-cabang.html">Tambah Event</a></li>
-                                        <li><a href="ubah-event-cabang.html">Ubah Event</a></li>
-                                        <li><a href="detail-event-cabang.html">Detail Event</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="kehadiran-staff.html"><i data-feather="calendar"></i><span>Kehadiran</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-cabang.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile-pendamping.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
                         </div>
                 </nav>
             </header>
             <!-- Page Sidebar Ends-->
             <div class="page-body">
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="row">
-                            <div class="col-9">
-                                <h3>Ubah Event</h3>
-                            </div>
-                            <div class="col-3">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="index-ketua-cabang.html"><i data-feather="home"></i></a>
-                                    </li>
-                                    <li class="breadcrumb-item">Event</li>
-                                    <li class="breadcrumb-item">Ubah Event</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Container-fluid starts-->
                 <div class="card">
-                    <div class="card-body">
-                        <!-- contet -->
-                        <!-- contet -->
-                        <div class="col-md-12">
-                            <form action="" method="GET">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Judul Materi</b></label>
-                                            <input type="text" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Center</b> </label>
-                                            <input type="text" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Tanggal Event</b></label>
-                                            <input type="text" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Jam Event</b></label>
-                                            <input type="text " class="form-control " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Upload Materi</b></label>
-
-                                            <input type="file" class="form-control" style="height: 45px;">
-                                        </div>
-                                    </div>
-
+                    <!-- atas -->
+                    <div class="container-fluid">
+                        <div class="page-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Kehadiran Staff Pendamping</h3>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Jumlah Kehadiran Tamu</b></label>
-                                            <input type="number" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label for="select" class=" form-control-label"><b>Jumlah PO</b> </label>
-                                            <input type="number" class="form-control" placeholder="-" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Jumlah DO Event</b></label>
-                                            <input type="number" class="form-control" placeholder="-" />
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end atas -->
+                    <!-- contet -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="header-top">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-primary btn-block">
+                                       Absen</a>
                                 </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- search -->
 
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block ">Ubah Data</button>
-                                    </div>
+                    <div class="table-responsive  text-center">
+                        <div id="advance-1_wrapper" class="dataTables_wrapper no-footer">
+                            <div class="header-top">
+                                <div class="faq-form" style="left: 20px;">
+                                    <input class="form-control" placeholder="Cari Data" type="search" aria-controls="advance-1">
+                                    <i class="search-icon" data-feather="search"></i>
                                 </div>
-                            </form>
+                                <div class="faq-form " style="top: 7px; right: 20px; ">
+                                    <label>Show 
+                                                        <select>
+                                                        <option value="10 ">10</option>
+                                                        <option value="25 ">25</option>
+                                                        <option value="50 ">50</option>
+                                                        <option value="100 ">100</option>
+                                                        </select> 
+                                                        entries
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="advance-1_filter" class="dataTables_filter"></div>
+                            <table class="table table-striped table-bordered mb-12">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 86.6953px;">No</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Tanggal: activate to sort column ascending" style="width: 100px">Tanggal</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Jam Kehadiran: activate to sort column ascending" style="width: 100px;">Jam Kehadiran</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Nama Cabang: activate to sort column ascending" style="width:100px">Nama Cabang</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <!-- Container-fluid Ends-->
+                <!-- end table -->
             </div>
-            <!-- footer start-->
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright 2020 © Cuba All rights reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="pull-right mb-0">Developed with <i class="fa fa-heart font-secondary"></i></p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
             </div>
         </div>
-        <!-- latest jquery-->
-        <script src="../assets/js/jquery-3.5.1.min.js"></script>
-        <!-- Bootstrap js-->
-        <script src="../assets/js/bootstrap/popper.min.js"></script>
-        <script src="../assets/js/bootstrap/bootstrap.js"></script>
-        <!-- feather icon js-->
-        <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-        <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
-        <!-- Sidebar jquery-->
-        <script src="../assets/js/sidebar-menu.js"></script>
-        <script src="../assets/js/config.js"></script>
-        <!-- Plugins JS start-->
-        <script src="../assets/js/chart/chartist/chartist.js"></script>
-        <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
-        <script src="../assets/js/chart/knob/knob.min.js"></script>
-        <script src="../assets/js/chart/knob/knob-chart.js"></script>
-        <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-        <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
-        <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
-        <script src="../assets/js/dashboard/default.js"></script>
-        <script src="../assets/js/notify/index.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-        <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-        <script src="../assets/js/typeahead/handlebars.js"></script>
-        <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-        <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-        <script src="../assets/js/typeahead-search/handlebars.js"></script>
-        <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
-        <script src="../assets/js/tooltip-init.js"></script>
-        <!-- Plugins JS Ends-->
-        <!-- Theme js-->
-        <script src="../assets/js/script.js"></script>
-        <!-- <script src="../assets/js/theme-customizer/customizer.js"></script> -->
-        <!-- login js-->
-        <!-- Plugin used-->
+        <img src="/assets/images/appointment/app-ent.jpg">
+    </div>
+    <!-- Container-fluid Ends-->
+    </div>
+    <!-- Container-fluid Ends-->
+    </div>
+    <!-- footer start-->
+    <footer class="footer ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-6 footer-copyright ">
+                    <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.5.1.min.js "></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/popper.min.js "></script>
+    <script src="../assets/js/bootstrap/bootstrap.js "></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js "></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js "></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/sidebar-menu.js "></script>
+    <script src="../assets/js/config.js "></script>
+    <!-- Plugins JS start-->
+    <script src="../assets/js/chart/chartist/chartist.js "></script>
+    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js "></script>
+    <script src="../assets/js/chart/knob/knob.min.js "></script>
+    <script src="../assets/js/chart/knob/knob-chart.js "></script>
+    <script src="../assets/js/chart/apex-chart/apex-chart.js "></script>
+    <script src="../assets/js/chart/apex-chart/stock-prices.js "></script>
+    <script src="../assets/js/notify/bootstrap-notify.min.js "></script>
+    <script src="../assets/js/dashboard/default.js "></script>
+    <script src="../assets/js/notify/index.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.en.js "></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js "></script>
+    <script src="../assets/js/typeahead/handlebars.js "></script>
+    <script src="../assets/js/typeahead/typeahead.bundle.js "></script>
+    <script src="../assets/js/typeahead/typeahead.custom.js "></script>
+    <script src="../assets/js/typeahead-search/handlebars.js "></script>
+    <script src="../assets/js/typeahead-search/typeahead-custom.js "></script>
+    <script src="../assets/js/tooltip-init.js "></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="../assets/js/script.js "></script>
+    <!-- <script src="../assets/js/theme-customizer/customizer.js "></script> -->
+    <!-- login js-->
+    <!-- Plugin used-->
 </body>
 
 </html>

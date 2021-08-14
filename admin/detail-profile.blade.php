@@ -157,7 +157,7 @@
                     <div class="ProfileCard u-cf">
                         <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
                         <div class="ProfileCard-details">
-                            <div class="ProfileCard-realName">{{name}}</div>
+                            <div class="ProfileCard-realName"></div>
                         </div>
                     </div>
                 </script>
@@ -190,40 +190,17 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-admin.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-admin.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="briefcase"></i><span>Pegawai</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-pegawai.html">Data Pegawai</a></li>
-                                        <li><a href="tambah-pegawai.html">Tambah Pegawai</a></li>
-                                        <li><a href="detail-pegawai.html">Detail Pegawai</a></li>
-                                        <li><a href="ubah-pegawai.html">Ubah Data Pegawai</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-pegawai.html"><i data-feather="briefcase"></i><span>Data Pegawai</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu.html">Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu.html">Detail Kehadiran Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu.html"><i data-feather="users"></i><span>Data Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="calendar"></i><span>Event</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-event-admin.html">Data Event Calender</a></li>
-                                        <li><a href="list-event-admin.html">Data Event List</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Profile</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile.html">Detail Profile</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -244,7 +221,7 @@
                                             <li class="breadcrumb-item">
                                                 <a href="index-admin.html"><i data-feather="home"></i></a>
                                             </li>
-                                            <li class="breadcrumb-item">Akun</li>
+                                            <li class="breadcrumb-item">Profile</li>
                                             <li class="breadcrumb-item">Detail Profile</li>
                                         </ol>
                                     </div>
@@ -258,7 +235,7 @@
                             <!-- contet -->
                             <form action="" method="GET">
                                 <div class="col-lg-2">
-                                    <div class="col-auto"><img class="rounded-circle" alt="" src="../assets/images/appointment/app-ent.jpg" style="width: 150px;  height:150px; margin-bottom: 25px;"></div>
+                                    <div class="col-auto"><img class="rounded-circle" alt="" src="../assets/images/user/1.jpg" style="width: 150px;  height:150px; margin-bottom: 25px;"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="data-profile" style="display: flex;">
@@ -316,8 +293,9 @@
                                     </div>
                                 </div>
                                 <br>
-                                <div class="col-lg-2 " style="left: 10px;">
-                                    <button class="btn btn-primary btn-block ">Ubah Data</button>
+                                <div class="col-lg-3 " style="left: 10px;">
+                                    <a href="ubah-profile.html" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                                 Ubah Data</a>
                                 </div>
 
                             </form>

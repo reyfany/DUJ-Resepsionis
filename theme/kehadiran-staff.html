@@ -172,7 +172,7 @@
             <!-- Page Sidebar Start-->
             <header class="main-nav">
                 <div class="logo-wrapper">
-                    <a href="index-pendamping.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
+                    <a href="index-resepsionis.html" style="margin-left: 10px; font-size:medium;"><b>DUJ Dashboard</b> </a>
                     <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                     <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"> </i></div>
                 </div>
@@ -182,7 +182,7 @@
                         <div id="mainnav">
                             <ul class="nav-menu custom-scrollbar">
                                 <li class="back-btn">
-                                    <a href="index-pendamping.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
+                                    <a href="index-resepsionis.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt="" /></a>
                                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2" aria-hidden="true"></i></div>
                                 </li>
                                 <li class="sidebar-title">
@@ -190,27 +190,17 @@
                                         <h6>DUJ Dashboard</h6>
                                     </div>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="home"></i><span >Dashboard</span> <label class="badge badge-success">2</label></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a class="lan-4" href="index-pendamping.html">Default</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="index-pendamping.html"><i data-feather="home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="users"></i><span>Tamu</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="data-tamu-pendamping.html">Data Tamu</a></li>
-                                        <li><a href="tambah-data-pendamping.html">Tambah Data Tamu</a></li>
-                                        <li><a href="kehadiran-tamu-pendamping.html">Detail Kehadiran Tamu</a></li>
-                                        <li><a href="ubah-tamu-pendamping.html">Ubah Data Tamu</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="data-tamu-pendamping.html"><i data-feather="users"></i><span>Tamu</span></a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link menu-title" href="#"><i data-feather="user"></i><span>Akun</span></a>
-                                    <ul class="nav-submenu menu-content">
-                                        <li><a href="detail-profile-pendamping.html">Detail Profile</a></li>
-
-                                    </ul>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="kehadiran-staff.html"><i data-feather="calendar"></i><span>Kehadiran</span></a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-link menu-title" href="detail-profile-pendamping.html"><i data-feather="user"></i><span>Profile</span></a>
                                 </li>
                         </div>
                 </nav>
@@ -219,157 +209,125 @@
             <div class="page-body">
                 <!-- Container-fluid starts-->
                 <div class="card">
+                    <!-- atas -->
                     <div class="container-fluid">
                         <div class="page-header">
                             <div class="row">
-                                <div class="col-9">
-                                    <h3 style="color: #7366FF;">Tambah Data Tamu</h3>
-                                </div>
-                                <div class="col-3">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="index-pendamping.html"><i data-feather="home"></i></a>
-                                        </li>
-                                        <li class="breadcrumb-item">Tamu</li>
-                                        <li class="breadcrumb-item">Tambah Data Tamu</li>
-                                    </ol>
+                                <div class="col-6">
+                                    <h3 style='color: #7366FF;'>Kehadiran Staff Pendamping</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <!-- contet -->
-                        <div class="col-lg-12">
-                            <form action="" method="GET">
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <div class="col-auto "><img class="rounded-circle " alt=" " src="../assets/images/appointment/app-ent.jpg" style="width: 150px; height:150px; margin-bottom: 25px; "></div>
-                                    </div>
+                    <!-- end atas -->
+                    <!-- contet -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="header-top">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-primary btn-block">
+                                       Absen</a>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <input type="file " class="custom-file-input id=" customFile " @change="onFileSelected " />
-                                            <small class="text-danger " v-if="errors.photo ">
-                                                                              </small>
-                                            <label class="custom-file-label " for="customFile " " style="left: 20px;">Pilih Foto</label>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>Nama Lengkap</b></label>
-                                            <input type="text" class="form-control" placeholder="Masukkan Nama Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label"><b>NIK</b></label>
-                                            <input type="number" class="form-control" placeholder="Masukkan NIK Anda *" id="name" required="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nomor Telepon</b></label>
-                                            <input type="number " class="form-control " placeholder="Masukkan Nomor Telepon Anda * " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Alamat</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Center</b></label>
-                                            <textarea class="form-control " placeholder="Masukkan Alamat Anda * " required=" " style="height: 40px; "></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Kabupaten / Kota</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Kabupaten/Kota Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Pekerjaan</b></label>
-                                            <input type="text " class="form-control " placeholder="********* " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Staff</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Staff Anda " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Penghasilan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Tanggungan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Riwayat Penyakit</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Usia</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Ketertarikan</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Testimoni</b></label>
-                                            <input type="text " class="form-control " placeholder="-" required=" " />
-                                        </div>
-                                    </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- search -->
 
+                    <div class="table-responsive  text-center">
+                        <div id="advance-1_wrapper" class="dataTables_wrapper no-footer">
+                            <div class="header-top">
+                                <div class="faq-form" style="left: 20px;">
+                                    <input class="form-control" placeholder="Cari Data" type="search" aria-controls="advance-1">
+                                    <i class="search-icon" data-feather="search"></i>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-3 ">
-                                        <button class="btn btn-primary btn-block " style="margin-top: 10px; ">Simpan Data</button>
-                                    </div>
+                                <div class="faq-form " style="top: 7px; right: 20px; ">
+                                    <label>Show 
+                                                        <select>
+                                                        <option value="10 ">10</option>
+                                                        <option value="25 ">25</option>
+                                                        <option value="50 ">50</option>
+                                                        <option value="100 ">100</option>
+                                                        </select> 
+                                                        entries
+                                    </label>
                                 </div>
-                            </form>
+                            </div>
+                            <div id="advance-1_filter" class="dataTables_filter"></div>
+                            <table class="table table-striped table-bordered mb-12">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 86.6953px;">No</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Tanggal: activate to sort column ascending" style="width: 100px">Tanggal</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Jam Kehadiran: activate to sort column ascending" style="width: 100px;">Jam Kehadiran</th>
+                                        <th class="sorting" tabindex="0" aria-controls="advance-1" rowspan="1" colspan="1" aria-label="Nama Cabang: activate to sort column ascending" style="width:100px">Nama Cabang</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Minggu | 08 - 12 - 2021 </td>
+                                        <td>07.00</td>
+                                        <td>Gudang Banyuwangi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <!-- end content -->
+                <!-- end table -->
             </div>
-
             </div>
-            <!-- Container-fluid Ends-->
         </div>
-        <!-- footer start-->
-        <footer class="footer ">
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-md-6 footer-copyright ">
-                        <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 ">
-                        <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
-                    </div>
+        <img src="/assets/images/appointment/app-ent.jpg">
+    </div>
+    <!-- Container-fluid Ends-->
+    </div>
+    <!-- Container-fluid Ends-->
+    </div>
+    <!-- footer start-->
+    <footer class="footer ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-6 footer-copyright ">
+                    <p class="mb-0 ">Copyright 2020 © Cuba All rights reserved.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <p class="pull-right mb-0 ">Developed with <i class="fa fa-heart font-secondary "></i></p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
     </div>
     <!-- latest jquery-->
